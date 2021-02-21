@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PMAllRequests.RequestsParkManagerCotroller">
+   <children>
+      <ImageView fx:id="images" fitHeight="393.0" fitWidth="650.0" layoutX="4.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="216.0" layoutY="75.0" prefHeight="53.0" prefWidth="219.0" text=" All Requests ">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="12.0" layoutY="9.0" prefHeight="17.0" prefWidth="80.0" text="12/12/2020">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ListView fx:id="listView" layoutX="3.0" layoutY="169.0" prefHeight="258.0" prefWidth="644.0" />
+      <Button id="btnExit" fx:id="btnExit" layoutX="614.0" mnemonicParsing="false" onAction="#getExit" prefHeight="30.0" prefWidth="30.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="CLOSE" size="25" text="" />
+         </graphic>
+      </Button>
+      <Button fx:id="btnMinimize" layoutX="579.0" layoutY="-1.0" mnemonicParsing="false" onAction="#getMinimize" prefHeight="35.0" prefWidth="35.0" textFill="#e40c0c">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="MINUS" size="25" wrappingWidth="15.714285850524902" />
+         </graphic>
+      </Button>
+      <Label layoutX="77.0" layoutY="34.0" prefHeight="20.0" prefWidth="98.0" text="Check Request" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="34.0" prefHeight="20.0" prefWidth="61.0" text="Home -&gt;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnHome" layoutY="462.0" mnemonicParsing="false" onAction="#getHome" prefHeight="35.0" prefWidth="35.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="HOME" size="30" />
+         </graphic>
+      </Button>
+      <Button id="btnOff" fx:id="btnLogOff" layoutX="606.0" layoutY="462.0" mnemonicParsing="false" onAction="#getLogOff" prefHeight="35.0" prefWidth="35.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="SIGN_OUT" size="30" />
+         </graphic>
+      </Button>
+      <Label layoutX="602.0" layoutY="447.0" text="Log Out" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="471.0" prefHeight="20.0" prefWidth="232.0" text="Go Nature Worker Workspace" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="LEAF" size="20" />
+         </graphic>
+      </Label>
+      <Label layoutX="5.0" layoutY="448.0" text="Home" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWelcome" alignment="CENTER_RIGHT" layoutX="418.0" layoutY="38.0" prefHeight="17.0" prefWidth="212.0" text="Welcome, name" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="150.0" prefHeight="20.0" prefWidth="80.0" text="Park Name" textFill="#170606">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="516.0" layoutY="150.0" prefHeight="20.0" prefWidth="42.0" text="Date " textFill="#170202">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="150.0" prefHeight="20.0" prefWidth="24.0" text="To" textFill="#2c0909">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="150.0" prefHeight="20.0" prefWidth="69.0" text="RequestID" textFill="#1b0909">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="580.0" layoutY="147.0" prefHeight="29.0" prefWidth="50.0" text=" Status" textFill="#250707">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="184.0" layoutY="152.0" prefHeight="20.0" prefWidth="90.0" text="Request Type" textFill="#170808">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="306.0" layoutY="151.0" prefHeight="20.0" prefWidth="36.0" text="From" textFill="#1b0606">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="442.0" layoutY="150.0" prefHeight="20.0" prefWidth="62.0" text=" Request" textFill="#1e0505">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

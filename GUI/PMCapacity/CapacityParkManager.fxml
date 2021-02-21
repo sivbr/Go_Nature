@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PMCapacity.CapacityParkManagerController">
+   <children>
+      <ImageView fx:id="images" fitHeight="393.0" fitWidth="650.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+      <Button id="btnExit" fx:id="btnExit" layoutX="614.0" mnemonicParsing="false" onAction="#getExit" prefHeight="30.0" prefWidth="30.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="CLOSE" size="25" text="" />
+         </graphic>
+      </Button>
+      <Button fx:id="btnMinimize" layoutX="579.0" layoutY="-1.0" mnemonicParsing="false" onAction="#getMinimize" prefHeight="35.0" prefWidth="35.0" textFill="#e40c0c">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="MINUS" size="25" wrappingWidth="15.714285850524902" />
+         </graphic>
+      </Button>
+      <Label fx:id="lblTime" layoutX="12.0" layoutY="9.0" prefHeight="17.0" prefWidth="80.0" text="12/07/2020">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblWelcome" alignment="CENTER_RIGHT" layoutX="418.0" layoutY="38.0" prefHeight="17.0" prefWidth="212.0" text="Welcome, fName lName" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="77.0" layoutY="34.0" prefHeight="20.0" prefWidth="154.0" text="New Request" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="34.0" prefHeight="20.0" prefWidth="61.0" text="Home -&gt;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnHome" layoutY="462.0" mnemonicParsing="false" onAction="#getHome" prefHeight="35.0" prefWidth="35.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="HOME" size="30" />
+         </graphic>
+      </Button>
+      <Button fx:id="btnLogOff" layoutX="606.0" layoutY="462.0" mnemonicParsing="false" onAction="#getLogOff" prefHeight="35.0" prefWidth="35.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="SIGN_OUT" size="30" />
+         </graphic>
+      </Button>
+      <Label layoutX="602.0" layoutY="447.0" text="Log Out" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="183.0" layoutX="19.0" layoutY="132.0" opacity="0.5" stroke="WHITE" strokeType="INSIDE" width="461.0" />
+      <Label alignment="CENTER" layoutX="148.0" layoutY="77.0" prefHeight="39.0" prefWidth="359.0" text="New Request" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button id="btnInside" fx:id="btnSave" alignment="CENTER" layoutX="489.0" layoutY="172.0" mnemonicParsing="false" onAction="#getSave" prefHeight="75.0" prefWidth="149.0" text="Send request" textAlignment="CENTER" textFill="#20ab13" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="SEND" size="40" />
+         </graphic>
+      </Button>
+      <RadioButton fx:id="radio1" layoutX="31.0" layoutY="156.0" mnemonicParsing="false" onAction="#chooseRadio" text="Update Capacity:">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio3" layoutX="31.0" layoutY="268.0" mnemonicParsing="false" onAction="#chooseRadio" text="Price discount:">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <DatePicker fx:id="dpFromDate" layoutX="167.0" layoutY="269.0" prefHeight="25.0" prefWidth="110.0" promptText="From" />
+      <DatePicker fx:id="dpToDate" layoutX="283.0" layoutY="268.0" prefHeight="25.0" prefWidth="110.0" promptText="To" />
+      <TextField fx:id="NewField" layoutX="355.0" layoutY="156.0" prefHeight="25.0" prefWidth="110.0" promptText="New" />
+      <Label alignment="CENTER" layoutX="215.0" layoutY="156.0" prefHeight="25.0" prefWidth="54.0" text="Current:" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio2" layoutX="31.0" layoutY="209.0" mnemonicParsing="false" onAction="#chooseRadio" text="Occasional visitors:">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="NewField2" layoutX="355.0" layoutY="212.0" prefHeight="25.0" prefWidth="110.0" promptText="New" />
+      <Label alignment="CENTER" layoutX="213.0" layoutY="212.0" prefHeight="25.0" prefWidth="54.0" text="Current:" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NewField3" layoutX="402.0" layoutY="268.0" prefHeight="25.0" prefWidth="61.0" promptText="\%" />
+      <Label fx:id="updatedLabel" alignment="CENTER" layoutX="273.0" layoutY="156.0" prefHeight="25.0" prefWidth="72.0" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="OccasionalLabel" alignment="CENTER" layoutX="271.0" layoutY="212.0" prefHeight="25.0" prefWidth="72.0" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblParkName" layoutX="497.0" layoutY="64.0" prefHeight="17.0" prefWidth="139.0" />
+      <Label layoutX="210.0" layoutY="471.0" prefHeight="20.0" prefWidth="232.0" text="Go Nature Worker Workspace" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="LEAF" size="20" />
+         </graphic>
+      </Label>
+      <Label layoutX="5.0" layoutY="448.0" text="Home" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

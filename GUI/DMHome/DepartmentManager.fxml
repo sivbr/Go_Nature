@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DMHome.DepartmentManagerHomeController">
+   <children>
+      <ImageView fx:id="images" fitHeight="393.0" fitWidth="650.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="319.0" layoutX="298.0" layoutY="117.0" opacity="0.5" stroke="WHITE" strokeType="INSIDE" width="326.0" />
+      <Label layoutX="85.0" layoutY="52.0" prefHeight="67.0" prefWidth="464.0" text="Department Manager Home">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="12.0" layoutY="9.0" prefHeight="17.0" prefWidth="80.0" text="12/07/2020">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button id="btnInside" fx:id="btnReport" layoutX="305.0" layoutY="149.0" mnemonicParsing="false" onAction="#createReport" prefHeight="67.0" prefWidth="160.0" text="Create Reports" textFill="#20ab13" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="PLUS" size="50" />
+         </graphic>
+      </Button>
+      <Label fx:id="lblWelcome" alignment="CENTER_RIGHT" layoutX="418.0" layoutY="38.0" prefHeight="17.0" prefWidth="212.0" text="Welocme, Worker Name" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="319.0" layoutX="23.0" layoutY="116.0" opacity="0.5" stroke="WHITE" strokeType="INSIDE" width="260.0" />
+      <Label layoutX="30.0" layoutY="120.0" prefHeight="35.0" prefWidth="246.0" text=" Amount Of Visitors:" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="153.0" prefHeight="27.0" prefWidth="106.0" text="Park Name">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="275.0" prefHeight="27.0" prefWidth="54.0" text="Sharon">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="183.0" prefHeight="27.0" prefWidth="60.0" text="Carmel">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="227.0" prefHeight="27.0" prefWidth="60.0" text="Hai park">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="153.0" prefHeight="27.0" prefWidth="80.0" text="Amount">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalCapcity" layoutX="170.0" layoutY="181.0" prefHeight="27.0" prefWidth="106.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalCapcity1" layoutX="170.0" layoutY="226.0" prefHeight="27.0" prefWidth="106.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalCapcity2" layoutX="170.0" layoutY="273.0" prefHeight="27.0" prefWidth="106.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMinimize" layoutX="580.0" layoutY="-1.0" mnemonicParsing="false" onAction="#getMinimize" prefHeight="35.0" prefWidth="35.0" textFill="#e40c0c">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="MINUS" size="25" wrappingWidth="15.714285850524902" />
+         </graphic>
+      </Button>
+      <Button id="btnExit" fx:id="btnExit" layoutX="615.0" mnemonicParsing="false" onAction="#getExit" prefHeight="30.0" prefWidth="30.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="CLOSE" size="25" text="" />
+         </graphic>
+      </Button>
+      <Button layoutY="462.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="HOME" size="30" />
+         </graphic>
+      </Button>
+      <Button id="btnOff" fx:id="btnLogOff" layoutX="606.0" layoutY="462.0" mnemonicParsing="false" onAction="#getLogOff" prefHeight="35.0" prefWidth="35.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="SIGN_OUT" size="30" />
+         </graphic>
+      </Button>
+      <Label layoutX="602.0" layoutY="447.0" text="Log Out" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="3.0" layoutY="33.0" prefHeight="17.0" prefWidth="60.0" text="Home" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="471.0" prefHeight="20.0" prefWidth="232.0" text="Go Nature Worker Workspace" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="LEAF" size="20" />
+         </graphic>
+      </Label>
+      <Label layoutX="5.0" layoutY="448.0" text="Home" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button id="btnInside" fx:id="btnRefresh" layoutX="87.0" layoutY="342.0" mnemonicParsing="false" onAction="#setRef" prefHeight="67.0" prefWidth="132.0" text="Refresh" textFill="#20ab13" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="REFRESH" size="40" />
+         </graphic>
+      </Button>
+      <Button id="btnInside" fx:id="btnRegister" layoutX="305.0" layoutY="246.0" mnemonicParsing="false" onAction="#registerMember" prefHeight="67.0" prefWidth="160.0" text="Register New Member" textFill="#20ab13" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="EDIT" size="40" />
+         </graphic>
+      </Button>
+      <Button id="btnInside" fx:id="btnExamination" layoutX="471.0" layoutY="246.0" mnemonicParsing="false" onAction="#examinationReports" prefHeight="67.0" prefWidth="150.0" text="Examination Of Requests" textFill="#20ab13" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="CHECK_SQUARE" size="40" />
+         </graphic>
+      </Button>
+      <Button id="btnInside" fx:id="btnCheck" layoutX="471.0" layoutY="149.0" mnemonicParsing="false" onAction="#checkReports" prefHeight="67.0" prefWidth="150.0" text="Check Reports" textFill="#20ab13" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="FOLDER_OPEN" size="40" />
+         </graphic>
+      </Button>
+      <Button id="btnInside" fx:id="btnInDe" layoutX="382.0" layoutY="324.0" mnemonicParsing="false" onAction="#getInDe" prefHeight="102.0" prefWidth="159.0" text="  Invoices and Decline" textAlignment="CENTER" textFill="#20ab13" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="TH_LIST" size="40" wrappingWidth="33.28571319580078" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

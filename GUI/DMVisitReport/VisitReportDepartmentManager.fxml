@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DMVisitReport.VisitReportDepartmentManager">
+   <children>
+      <ImageView fx:id="images" fitHeight="393.0" fitWidth="650.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="223.0" layoutY="54.0" prefHeight="53.0" prefWidth="205.0" text="Visits Report">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="314.0" prefHeight="29.0" prefWidth="69.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button id="btnInside" fx:id="btnChart" layoutX="244.0" layoutY="378.0" mnemonicParsing="false" onAction="#getChart" prefHeight="47.0" prefWidth="176.0" text="  Visitors Chart" textFill="#20ab13">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="SIGNAL" size="35" />
+         </graphic></Button>
+      <Label fx:id="lblDetails" layoutX="140.0" layoutY="111.0" prefHeight="25.0" prefWidth="389.0" text="Park: Hai Park               Dates: 20/10/2020-23/12/2020">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TreeTableView fx:id="visitTable" layoutX="15.0" layoutY="142.0" prefHeight="229.0" prefWidth="621.0">
+        <columns>
+          <TreeTableColumn fx:id="colDate" prefWidth="97.0" text="Date" />
+          <TreeTableColumn fx:id="colTime" prefWidth="117.0" text="Time" />
+            <TreeTableColumn fx:id="colSingles" prefWidth="142.0" text="Singles" />
+            <TreeTableColumn fx:id="colMembers" prefWidth="127.0" text="Members" />
+            <TreeTableColumn fx:id="colGroups" prefWidth="137.0" text="Groups" />
+        </columns>
+      </TreeTableView>
+      <Label fx:id="lblTime" layoutX="12.0" layoutY="9.0" prefHeight="17.0" prefWidth="80.0" text="12/07/2020">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="34.0" prefHeight="20.0" prefWidth="102.0" text="Reports Table" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="34.0" prefHeight="20.0" prefWidth="61.0" text="Home -&gt;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button id="btnExit" fx:id="btnExit" layoutX="614.0" mnemonicParsing="false" onAction="#getExit" prefHeight="30.0" prefWidth="30.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon id="logo" fill="#20ab13" glyphName="CLOSE" size="25" text="" />
+         </graphic>
+      </Button>
+      <Button fx:id="btnMinimize" layoutX="579.0" layoutY="-1.0" mnemonicParsing="false" onAction="#getMinimize" prefHeight="35.0" prefWidth="35.0" textFill="#e40c0c">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="MINUS" size="25" wrappingWidth="15.714285850524902" />
+         </graphic>
+      </Button>
+      <Button fx:id="btnHome" layoutY="462.0" mnemonicParsing="false" onAction="#getHome" prefHeight="35.0" prefWidth="35.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="HOME" size="30" />
+         </graphic>
+      </Button>
+      <Button id="btnOff" fx:id="btnLogOff" layoutX="606.0" layoutY="462.0" mnemonicParsing="false" onAction="#getLogOff" prefHeight="35.0" prefWidth="35.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="SIGN_OUT" size="30" />
+         </graphic>
+      </Button>
+      <Label layoutX="602.0" layoutY="447.0" text="Log Out" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWelcome" alignment="CENTER_RIGHT" layoutX="418.0" layoutY="38.0" prefHeight="17.0" prefWidth="212.0" text="Welocme, Worker Name" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="471.0" prefHeight="20.0" prefWidth="232.0" text="Go Nature Worker Workspace" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="LEAF" size="20" />
+         </graphic>
+      </Label>
+      <Label layoutX="5.0" layoutY="448.0" text="Home" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="34.0" prefHeight="20.0" prefWidth="102.0" text="Create Report -&gt;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="62.0" layoutY="462.0" mnemonicParsing="false" onAction="#getBack" prefHeight="35.0" prefWidth="35.0" textFill="#eb0a0a">
+         <graphic>
+            <FontAwesomeIcon fill="#20ab13" glyphName="ARROW_LEFT" size="30" />
+         </graphic>
+      </Button>
+      <Label layoutX="67.0" layoutY="448.0" text="Back" textFill="#20ab13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

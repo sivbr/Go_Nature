@@ -1,0 +1,32 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.button{
+	-fx-font-weight: bold;
+	-fx-background-color: white;	
+}
+#login {
+	-fx-background-color: #20ab13;
+	-fx-text-fill:  white;
+}
+
+#logo{
+		-fx-fill:#20ab13;
+	}
+	
+.button:hover {
+	-fx-background-color: #0a0f72;
+}
+#login:hover {
+	-fx-background-color: #0a0f72;
+}
+#btnExit:hover #logo{
+	-fx-fill:white;
+		
+} 
+#btnExit:hover {
+	-fx-background-color: #b82020;
+}
+
+.root {
+	-fx-background-color: white;
+}
